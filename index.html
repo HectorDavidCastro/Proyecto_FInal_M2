@@ -10,69 +10,61 @@
 <body>
     <main>
         <section>
-            <div class="container d-flex flex-column justify-content-center align-items-center">
-                <div class="contenedor-calculadora">
-                    <h1 class="titulo">Calculadora</h1>
-                    <div class="contedor-input">
-                        <input class="input" type="number">
-                    </div>
-                    <div class="row">
-                        <div class="d-flex flex-row">
-                            <div><button class="btn btn-warning" type="button">7</button></div>
-                            <div><button class="btn btn-warning" type="button">8</button></div>
-                            <div><button class="btn btn-warning" type="button">9</button></div>
-                            <div><button class="btn btn-warning" type="button">/</button></div>
-                        </div>
-                        <div class="d-flex flex-row">
-                            <div><button class="btn btn-warning" type="button">4</button></div>
-                            <div><button class="btn btn-warning" type="button">5</button></div>
-                            <div><button class="btn btn-warning" type="button">6</button></div>
-                            <div><button class="btn btn-warning" type="button">*</button></div>
-                        </div>
-                        <div class="d-flex flex-row">
-                            <div><button class="btn btn-warning" type="button">1</button></div>
-                            <div><button class="btn btn-warning" type="button">2</button></div>
-                            <div><button class="btn btn-warning" type="button">3</button></div>
-                            <div><button class="btn btn-warning" type="button">+</button></div>
-                        </div>
-                        <div class="d-flex flex-row">
-                            <div><button class="btn btn-warning" type="button">.</button></div>
-                            <div><button class="btn btn-warning" type="button">0</button></div>
-                            <div><button class="btn btn-warning" type="button">-</button></div>
-                            <div><button class="btn btn-warning" type="button">=</button></div>
-                        </div>
-                    </div>
+           <div class="container d-flex flex-column justify-content-center">
+                <h1 class="text-center mt-3">Calculadora</h1>
+                <div class="card shadow mt-3 mb-1">
+                    <input id="primerValor" class="form-control" type="number" placeholder="Ingrese un valor">
                 </div>
-            </div> 
+                <div class="mb-1">
+                    <select class="form-select" aria-label="Default select example"  id="operador">
+                        <option selected value="">Seleccione un operador</option>
+                        <option value="suma">Suma(+)</option>
+                        <option value="resta">Resta(-)</option>
+                        <option value="multiplicacion">Multiplicación(*)</option>
+                        <option value="division">División(/)</option>
+                    </select>
+                </div>
+                <div class="card shadow mb-3">
+                    <input id="segundoValor" class="form-control" type="number" placeholder="Ingrese un valor">
+                </div>
+                <div class="mb-3"><button id="resolver" type="button" class="btn btn-success">Resolver</button></div>
+                <div class="mb-2"><h3 class="text-center">Historial</h3></div>
+                <div >
+                    <ul id="historial" class="list-group">
+
+                    </ul>
+                </div>
+           </div> 
         </section>
-        <section>
+<!--         <section>
             <div class="container  d-flex flex-column justify-content-center align-items-center">
-                <div class="row">
+                <div id="img-contenedor" class="row">
                     <h1 class="titulo">Galeria de imagenes</h1>
                     <div class="col">
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
                     </div>
                     <div class="col">
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
                     </div>
                     <div class="col">
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
-                        <div><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
+                        <div id="img"><img src="https://placehold.co/100x100" alt="imagen"></div>
                     </div>
                 </div>
+                <div id="div"></div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 
 
 
-
+    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 </body>
 </html>
