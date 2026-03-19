@@ -10,4 +10,23 @@ export class Operacion{
         this.operador = operador;
         this.segundoValor = segundoValor;
     }
+    
+    operar(primerValor, operador, segundoValor){
+        if(operador==="+"){
+            const resultado = primerValor+segundoValor
+            return resultado
+        }
+        if(operador==="-"){
+            const resultado= primerValor-segundoValor
+            return resultado
+        }
+        if(operador==="*"){
+            const resultado= primerValor* segundoValor
+            return resultado
+        }
+         if(operador==="/"){
+            const resultado = primerValor/segundoValor
+            return resultado
+        }
+    }
 }
