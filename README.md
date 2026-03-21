@@ -4,8 +4,9 @@
 
 ## Funcionalidades Principales
 
-- Realizar diversas operaciones
+- Realizar operaciones aritmeticas basicas
 - Ver el historial de las operaciones
+- Borrar operaciones del historial
 
 ---
 
@@ -15,5 +16,5 @@
 
 ## Funcinalidades Principales
 
-- Ver diversas imagenes
+- Ver imagenes en miniatura
 - Mostrar las mismas en mayor tamaño 
